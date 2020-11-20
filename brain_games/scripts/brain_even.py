@@ -1,10 +1,10 @@
-from ..cli import welcome_user
+from ..logic.base import game
 from ..logic.even import even
 
 
 def main():
-    name = welcome_user()
-    even(name)
+    greeting = 'Answer "yes" if the number is even, otherwise answer "no".'
+    game(greeting, even)
 
 
 if __name__ == '__main__':
