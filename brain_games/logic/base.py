@@ -22,7 +22,10 @@ def game(greeting, get_task_items):
             print('Correct!')
             correct_answers_num += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+            )
             print(f'Let\'s try again, {player_name}!')
             break
     if correct_answers_num == MAX_CORRECT_ANSWERS:
